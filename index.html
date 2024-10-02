@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+  <h1>TODO LIST</h1>
+
+  <div class="container">
+    <button class="add-btn">Add Task</button>
+    <select class="filter-select">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="incompleted">Incompleted</option>
+    </select>
+
+  </div>
+  <div id="error">
+
+  </div>
+ 
+    <div class="todo-list">
+        <ul class="task-list"></ul>
+      </div>
+      
+      <div class="modal-window" style="display: none;">
+        <input type="text" class="task-title" placeholder="Task Title" required>
+        <textarea class="task-input" placeholder="Enter task" id="text" required></textarea>
+        <div class="button-container">
+          <button class="save-btn">Save</button>
+          <button class="close-btn">Close</button>
+        </div>
+      <script src="script.js"></script>
+</body>
+</html>
